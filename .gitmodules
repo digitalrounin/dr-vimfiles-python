@@ -1,0 +1,3 @@
+[submodule "home/.vim/bundle/python-syntax"]
+	path = home/.vim/bundle/python-syntax
+	url = https://github.com/hdima/python-syntax.git
