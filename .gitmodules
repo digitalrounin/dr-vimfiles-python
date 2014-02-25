@@ -7,6 +7,3 @@
 [submodule "home/.vim/bundle/vim-virtualenv"]
 	path = home/.vim/bundle/vim-virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv.git
-[submodule "home/.vim/bundle/ropevim"]
-	path = home/.vim/bundle/ropevim
-	url = https://github.com/mcepl/ropevim.git
