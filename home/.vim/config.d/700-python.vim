@@ -6,4 +6,7 @@ let python_highlight_all = 1
 "----
 " syntastic
 "----
-let g:syntastic_python_checkers = ['python', 'pylint', 'pyflakes', 'pep8']
+" pep8     - PEP8 conformity
+" pylint   - Python linter
+" pyflakes - More error analysis
+let g:syntastic_python_checkers = ['python', 'pep8', 'pylint', 'pyflakes']
