@@ -19,3 +19,9 @@
 [submodule "home/.vim/bundle/yaml-vim"]
 	path = home/.vim/bundle/yaml-vim
 	url = https://github.com/ingydotnet/yaml-vim.git
+[submodule "home/.vim/bundle/jedi-vim"]
+	path = home/.vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "home/.vim/bundle/ropevim"]
+	path = home/.vim/bundle/ropevim
+	url = https://github.com/python-rope/ropevim.git
