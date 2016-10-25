@@ -83,6 +83,7 @@ Might be a good idea to delete old links:
   - Investigate _YouCompleteMe_:
     - [YouCompleteMe][]
     - [YouCompleteMe on GitHub][]
+  - _Rope_ does not support _Python 3_.  Revisit [ropevim][].
 
 
 

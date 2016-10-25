@@ -3,6 +3,7 @@
 "----
 let python_highlight_all = 1
 
+
 "----
 " syntastic
 "----
@@ -13,3 +14,11 @@ let python_highlight_all = 1
 "     pycodestyle - formally known as pep8
 "     mccabe - Ned’s script to check McCabe complexity.
 let g:syntastic_python_checkers = ['python', 'pylint', 'flake8']
+
+
+"----
+" UltiSnips
+"----
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
