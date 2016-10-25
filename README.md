@@ -5,17 +5,34 @@ Pedro's Python vimfiles for use with homeshick.
 
 ## Requirements
 
-  - [homeshick][] - 
-  - [dr-vimfiles][]
-  - [rope][] - a python refactoring library
-  - [Jedi][] - code completion tool.
-
+  - [homeshick][] - Git dotfiles synchronizer written in bash.  Go to project
+    page for instructions.
+  - [dr-vimfiles][] - Go to project page for instructions.
 
 
 ## Includes:
 
+  - [UltiSnips][] The ultimate snippet solution for Vim. Send pull requests to
+    SirVer/ultisnips!
+    - [vim-snippets][] - vim-snipmate default snippets (Previously
+      snipmate-snippets)
+  - [python-syntax][] - Enhanced version of the original Python syntax
+    highlighting script.  (***TODO*** - reevaluate, confirm it is relavant.)
+  - [salt-vim][] - Vim files for working on SaltStack files.
+  - [Vim-Jinja2-Syntax][] - An up-to-date jinja2 syntax file.
+  - [vim-python-pep8-indent][] - This small script modifies Vim’s indentation
+    behavior to comply with PEP8 and my aesthetic preferences.
+  - [vim-virtualenv][] - "When using :python or :!python, it will only have
+    access to the environment outside of any virtualenvs. If you're working
+    with packages that are only installed in a virtualenv, they will not be
+    available to Vim."
+  - [yaml-vim][] - YAML Highlight script for VIM editor.
   - [jedi-vim][] - Code completion.
+    - [Jedi documentation][]
+    - [Jedi][] - _Jedi_ on GitHub.
   - [ropevim][] - Refactoring.
+    - [python-rope][] - Documentation.
+
 
 ## Installation
 
@@ -41,28 +58,33 @@ Assuming you want to use _Python 3.5_ as your default:
 
   ```bash
   $ homeshick clone https://github.com/digitalrounin/dr-vimfiles-python.git
+  $ homeshick link
+  ```
+
+Might be a good idea to delete old links:
+
+  ```bash
+  $ find ~/.vim -xtype l -print
+  $ find ~/.vim -xtype l -print -delete
   ```
 
 
-## Further Reading
-
-  - Rope
-    - [rope, a python refactoring library][rope]
-    - [rope pypi][rope_pypi]
-  - Ropevim
-    - [ropevim, rope in vim][ropevim]
-    - [ropevim Github][ropevim_github]
 
 
 
 
-<!-- link ids -->
-[rope]: http://rope.sourceforge.net/
-[rope_pypi]: https://pypi.python.org/pypi/rope
-[ropevim]: http://rope.sourceforge.net/ropevim.html
-[ropevim_github]: https://github.com/python-rope/ropevim
 
+[homeshick]: https://github.com/andsens/homeshick
 [dr-vimfiles]: https://github.com/digitalrounin/dr-vimfiles
+
+[UltiSnips]: https://github.com/SirVer/ultisnips
+[Vim-Jinja2-Syntax]: https://github.com/Glench/Vim-Jinja2-Syntax
+[python-syntax]: https://github.com/hdima/python-syntax
+[salt-vim]: https://github.com/saltstack/salt-vim
+[vim-python-pep8-indent]: https://github.com/hynek/vim-python-pep8-indent
+[vim-snippets]: https://github.com/honza/vim-snippets
+[vim-virtualenv]: https://github.com/jmcantrell/vim-virtualenv
+[yaml-vim]: https://github.com/ingydotnet/yaml-vim
 
 [python-rope]: https://github.com/python-rope/rope
 [ropevim]: https://github.com/python-rope/ropevim
@@ -71,4 +93,3 @@ Assuming you want to use _Python 3.5_ as your default:
 [Jedi]: https://github.com/davidhalter/jedi
 [jedi-vim]: https://github.com/davidhalter/jedi-vim
 
-[homeshick]: https://github.com/andsens/homeshick
