@@ -1,7 +1,7 @@
-dr-vimfiles-python
-==================
+# dr-vimfiles-python
 
 Pedro's Python vimfiles for use with homeshick.
+
 
 ## Requirements
 
@@ -10,7 +10,7 @@ Pedro's Python vimfiles for use with homeshick.
   - [dr-vimfiles][] - Go to project page for instructions.
 
 
-## Includes:
+## Includes
 
   - [UltiSnips][] The ultimate snippet solution for Vim. Send pull requests to
     SirVer/ultisnips!
@@ -69,10 +69,17 @@ Might be a good idea to delete old links:
   ```
 
 
+## Todo list
+
+  - Investigate _YouCompleteMe_:
+    - [YouCompleteMe][]
+    - [YouCompleteMe on GitHub][]
 
 
 
 
+[YouCompleteMe]: http://valloric.github.io/YouCompleteMe/
+[YouCompleteMe on GitHub]: https://github.com/Valloric/YouCompleteMe
 
 [homeshick]: https://github.com/andsens/homeshick
 [dr-vimfiles]: https://github.com/digitalrounin/dr-vimfiles
