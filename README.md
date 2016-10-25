@@ -48,10 +48,19 @@ Assuming you want to use _Python 3.5_ as your default:
   $ sudo port install vim +python35 +ruby
   ```
 
+Add the following to your `~/.profile` on _OS X_:
+
+  ```bash
+  # OS X - Local Python stuff
+  if [ -d "$HOME/Library/Python/3.5/bin" ]; then
+    export PATH="$HOME/Library/Python/3.5/bin:$PATH"
+  fi
+  ```
+
 ### Python packages
 
   ```bash
-  $ pip install --user rope jedi
+  $ pip install --user rope jedi flake8 pylint
   ```
 
 ### Install dr-vimfiles-python
