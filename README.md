@@ -32,6 +32,7 @@ Pedro's Python vimfiles for use with homeshick.
     - [Jedi][] - _Jedi_ on GitHub.
   - [ropevim][] - Refactoring.
     - [python-rope][] - Documentation.
+  - [YouCompleteMe][] - Requires manual installation.
 
 
 ## Installation
@@ -57,6 +58,13 @@ Add the following to your `~/.profile` on _OS X_:
   fi
   ```
 
+If you would like to include _JavaScript_ completion include:
+
+  ```bash
+  $ sudo port install nodejs6 npm3
+  ```
+
+
 ### Python packages
 
   ```bash
@@ -77,12 +85,33 @@ Might be a good idea to delete old links:
   $ find ~/.vim -xtype l -print -delete
   ```
 
+### Installing YouCompleteMe
+
+[YouCompleteMe][] is being installed directly into `~/.vim/bundle/`, bypassing
+_homeshick_.  _YouCompleteMe_ is composed of over 8,000 files, making it too
+large to manage via symlinks.
+
+  ```bash
+  $ cd ~/.vim/bundle
+  $ git clone https://github.com/Valloric/YouCompleteMe.git
+  $ cd ~/.vim/bundle/YouCompleteMe/
+  $ git submodule update --init --recursive
+  ```
+
+The installation is done with `install.py`, and not `install.sh`.  The latter
+is being deprecated and dafaults to a _Python 2.x_ installation:
+
+  ```bash
+  $ ./install.py --clang-completer --tern-completer
+  ```
+
+For build with other supported languages, check the [YouCompleteMe OS X
+installation][].  There is support for: _C#_m _TypeScript_, _GoLang_ and
+others.
+
 
 ## Todo list
 
-  - Investigate _YouCompleteMe_:
-    - [YouCompleteMe][]
-    - [YouCompleteMe on GitHub][]
   - _Rope_ does not support _Python 3_.  Revisit [ropevim][].
 
 
@@ -90,6 +119,7 @@ Might be a good idea to delete old links:
 
 [YouCompleteMe]: http://valloric.github.io/YouCompleteMe/
 [YouCompleteMe on GitHub]: https://github.com/Valloric/YouCompleteMe
+[YouCompleteMe OS X installation]: https://github.com/Valloric/YouCompleteMe/blob/master/README.md#mac-os-x
 
 [homeshick]: https://github.com/andsens/homeshick
 [dr-vimfiles]: https://github.com/digitalrounin/dr-vimfiles
