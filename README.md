@@ -33,6 +33,7 @@ Pedro's Python vimfiles for use with homeshick.
   - [ropevim][] - Refactoring.
     - [python-rope][] - Documentation.
   - [YouCompleteMe][] - Requires manual installation.
+  - [digitalrounin/vim-yaml-folds][]
 
 
 ## Installation
@@ -140,3 +141,4 @@ others.
 [Jedi]: https://github.com/davidhalter/jedi
 [jedi-vim]: https://github.com/davidhalter/jedi-vim
 
+[digitalrounin/vim-yaml-folds]: https://github.com/digitalrounin/vim-yaml-folds
