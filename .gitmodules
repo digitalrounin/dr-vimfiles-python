@@ -31,3 +31,6 @@
 [submodule "home/.vim/bundle/vim-yaml-folds"]
 	path = home/.vim/bundle/vim-yaml-folds
 	url = https://github.com/digitalrounin/vim-yaml-folds.git
+[submodule "home/.vim/bundle/InstantRst"]
+	path = home/.vim/bundle/InstantRst
+	url = https://github.com/Rykka/InstantRst.git
