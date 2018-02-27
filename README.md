@@ -47,8 +47,10 @@ Assuming you want to use _Python 3.5_ as your default:
   $ sudo port select --set python python35
   $ sudo port select --set python3 python35
   $ sudo port select --set pip pip35
-  $ sudo port install vim +python35 +ruby
+  $ sudo port install vim +python36 +ruby23 +huge +cscope
   ```
+
+The `+huge` and `+cscope` are not required, but I like having them.
 
 Add the following to your `~/.profile` on _OS X_:
 
